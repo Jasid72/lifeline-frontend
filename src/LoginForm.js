@@ -26,6 +26,7 @@ function LoginForm() {
       }
     } catch (error) {
       // Handling network errors or other exceptions
+      console.log(process.env.REACT_APP_API_URL);
       console.error("Error during the POST request:", error);
       alert("Error occurred during the POST request.");
     }
